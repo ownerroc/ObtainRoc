@@ -9,6 +9,7 @@ import 'package:easy_localization/easy_localization.dart';
 class GitLab extends AppSource {
   GitLab() {
     host = 'gitlab.com';
+    overrideEligible = true;
 
     additionalSourceAppSpecificSettingFormItems = [
       [
@@ -39,7 +40,7 @@ class GitLab extends AppSource {
   ) async {
     bool fallbackToOlderReleases =
         additionalSettings['fallbackToOlderReleases'] == true;
-    Response res = await get(Uri.parse('$standardUrl/-/tags?format=atom'));
+    Response res = await sourceRequest('$standardUrl/-/tags?format=atom');
     if (res.statusCode == 200) {
       var standardUri = Uri.parse(standardUrl);
       var parsedHtml = parse(res.body);
