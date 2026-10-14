@@ -14,8 +14,8 @@ Get Android app updates straight from the source.
 ObtainRoc (fork of Obtainium) allows you to install and update apps directly from their releases pages, and receive notifications when new releases are made available.
 
 More info:
-- [Obtainium Wiki](https://github.com/ownerroc/Obtainium/wiki/) ([repository](https://github.com/ownerroc/Obtainium-Wiki))
-- [Deep Links](https://github.com/ownerroc/Obtainium/wiki/deep_links/) - link straight to an import, or add a badge to your own project
+- [Obtainium Wiki](https://wiki.obtainium.imranr.dev/) ([upstream repository](https://github.com/ImranR98/Obtainium-Wiki))
+- [Deep Links](https://wiki.obtainium.imranr.dev/deep_links) - link straight to an import, or add a badge to your own project
 - [Obtainium 101](https://www.youtube.com/watch?v=0MF_v2OBncw) - Tutorial video
 - ["Verified Apps"](https://github.com/privacyguides/verified-apps-android) - App verification tool (recommended, integrates with Obtainium)
 - [apps.obtainium.imranr.dev](https://apps.obtainium.imranr.dev/) - Crowdsourced app configurations ([repository](https://github.com/ImranR98/apps.obtainium.imranr.dev))
