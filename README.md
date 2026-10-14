@@ -1,15 +1,21 @@
 <!-- <div align="center"><a href="https://github.com/Safouene1/support-palestine-banner/blob/master/Markdown-pages/Support.md"><img src="https://raw.githubusercontent.com/Safouene1/support-palestine-banner/master/banner-support.svg" alt="Support Palestine" style="width: 100%;"></a></div> -->
 <!-- Banner temporarily removed for reasons, will re-enable or replace shortly -->
 
-# ![Obtainium Icon](./assets/graphics/icon_small.png) Obtainium
+> **ObtainRoc** is a fork of [Obtainium](https://github.com/ImranR98/Obtainium) maintained by
+> [ivansslo](https://github.com/ivansslo) / [ownerroc](https://github.com/ownerroc).
+> It is rebranded (applicationId `dev.ivansslo.obtainroc`, built and signed with its own release key)
+> but tracks upstream features. All credit for the original app goes to
+> [ImranR98](https://github.com/ImranR98) and Obtainium's contributors.
+
+# ![Obtainium Icon](./assets/graphics/icon_small.png) ObtainRoc
 
 Get Android app updates straight from the source.
 
-Obtainium allows you to install and update apps directly from their releases pages, and receive notifications when new releases are made available.
+ObtainRoc (fork of Obtainium) allows you to install and update apps directly from their releases pages, and receive notifications when new releases are made available.
 
 More info:
-- [Obtainium Wiki](https://wiki.obtainium.imranr.dev/) ([repository](https://github.com/ImranR98/Obtainium-Wiki))
-- [Deep Links](https://wiki.obtainium.imranr.dev/deep_links/) - link straight to an import, or add a badge to your own project
+- [Obtainium Wiki](https://github.com/ownerroc/Obtainium/wiki/) ([repository](https://github.com/ownerroc/Obtainium-Wiki))
+- [Deep Links](https://github.com/ownerroc/Obtainium/wiki/deep_links/) - link straight to an import, or add a badge to your own project
 - [Obtainium 101](https://www.youtube.com/watch?v=0MF_v2OBncw) - Tutorial video
 - ["Verified Apps"](https://github.com/privacyguides/verified-apps-android) - App verification tool (recommended, integrates with Obtainium)
 - [apps.obtainium.imranr.dev](https://apps.obtainium.imranr.dev/) - Crowdsourced app configurations ([repository](https://github.com/ImranR98/apps.obtainium.imranr.dev))
@@ -62,17 +68,17 @@ Or, contribute some configurations to the website by creating a PR at [this repo
 
 [<img src="https://github.com/machiav3lli/oandbackupx/blob/034b226cea5c1b30eb4f6a6f313e4dadcbb0ece4/badge_github.png"
     alt="Get it on GitHub"
-    height="80">](https://github.com/ImranR98/Obtainium/releases)
+    height="80">](https://github.com/ownerroc/Obtainium/releases)
 [<img src="https://gitlab.com/IzzyOnDroid/repo/-/raw/master/assets/IzzyOnDroid.png"
      alt="Get it on IzzyOnDroid"
-     height="80">](https://apt.izzysoft.de/fdroid/index/apk/dev.imranr.obtainium)
+     height="80">](https://apt.izzysoft.de/fdroid/index/apk/dev.ivansslo.obtainroc)
 [<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png"
     alt="Get it on F-Droid"
-    height="80">](https://f-droid.org/packages/dev.imranr.obtainium.fdroid/)
+    height="80">](https://f-droid.org/packages/dev.ivansslo.obtainroc.fdroid/)
      
 Verification info:
 
-- Package ID: `dev.imranr.obtainium`
+- Package ID: `dev.ivansslo.obtainroc`
 - SHA-256 hash of signing certificate:
   ```text
   B3:53:60:1F:6A:1D:5F:D6:60:3A:E2:F5:0B:E8:0C:F3:01:36:7B:86:B6:AB:8B:1F:66:24:3D:A9:6C:D5:73:62
