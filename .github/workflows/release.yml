@@ -57,7 +57,7 @@ jobs:
         run: |
           if [ -f android/app/release-keystore.jks ]; then
             cat > android/key.properties <<EOF
-          storeFile=app/release-keystore.jks
+          storeFile=release-keystore.jks
           storePassword=${{ secrets.OBTAINROC_KEYSTORE_PASSWORD }}
           keyPassword=${{ secrets.OBTAINROC_KEYSTORE_PASSWORD }}
           keyAlias=${{ secrets.OBTAINROC_KEYSTORE_ALIAS }}
