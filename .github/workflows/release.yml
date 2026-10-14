@@ -43,14 +43,35 @@ jobs:
           TAG="v$VERSION"
           echo "tag=$TAG" >> $GITHUB_OUTPUT
 
+      - name: Decode Release Keystore
+        env:
+          OBTAINROC_KEYSTORE_BASE64: ${{ secrets.OBTAINROC_KEYSTORE_BASE64 }}
+        run: |
+          if [ -n "$OBTAINROC_KEYSTORE_BASE64" ]; then
+            printf '%s' "$OBTAINROC_KEYSTORE_BASE64" | base64 -d > android/app/release-keystore.jks
+          else
+            echo "No keystore secret set - builds will be unsigned"
+          fi
+
+      - name: Write key.properties
+        run: |
+          if [ -f android/app/release-keystore.jks ]; then
+            cat > android/key.properties <<EOF
+          storeFile=app/release-keystore.jks
+          storePassword=${{ secrets.OBTAINROC_KEYSTORE_PASSWORD }}
+          keyPassword=${{ secrets.OBTAINROC_KEYSTORE_PASSWORD }}
+          keyAlias=${{ secrets.OBTAINROC_KEYSTORE_ALIAS }}
+          EOF
+          fi
+
       - name: Build APKs
         run: |
           flutter pub get
           # TODO: Remove once Flutter's libdartjni.so no longer embeds a non-reproducible build ID
           sed -i -e 's/-Wl,/-Wl,--build-id=none,/' ${PUB_CACHE:-$HOME/.pub-cache}/hosted/*/jni-*/src/CMakeLists.txt
-          # No key.properties exists in CI, so build.gradle.kts already sets
-          # signingConfig = null and produces unsigned APKs (signing happens
-          # separately in the sign.sh script).
+          # If the keystore secret was decoded above, key.properties is present
+          # and build.gradle.kts signs the release APKs automatically.
+          # Without it, signingConfig = null and APKs are unsigned.
           flutter build apk --flavor normal && flutter build apk --split-per-abi --flavor normal
           for file in build/app/outputs/flutter-apk/app-*normal*.apk*; do mv "$file" "${file//-normal/}"; done
           flutter build apk --flavor fdroid -t lib/main_fdroid.dart && flutter build apk --split-per-abi --flavor fdroid -t lib/main_fdroid.dart
@@ -58,23 +79,14 @@ jobs:
           cp ./sign.sh ./build/app/outputs/flutter-apk/
           ls -l ./build/app/outputs/flutter-apk/
 
+      - name: Clean Up Keystore
+        if: always()
+        run: rm -f android/app/release-keystore.jks android/key.properties
+
       - name: Save Unsigned APKs as Action Artifacts
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
         with:
           path: build/app/outputs/flutter-apk/*
 
-      - name: Create Tag
-        uses: mathieudutour/github-tag-action@fcfbdceb3093f6d85a3b194740f8c6cec632f4e2 # v6.1
-        with:
-          github_token: ${{ secrets.GH_ACCESS_TOKEN }}
-          custom_tag: "${{ steps.extract_version.outputs.tag }}"
-          tag_prefix: ""
-      
-      - name: Create Draft Release
-        uses: ncipollo/release-action@339a81892b84b4eeb0f6e744e4574d79d0d9b8dd # v1.21.0
-        with:
-          token: ${{ secrets.GH_ACCESS_TOKEN }}
-          tag: "${{ steps.extract_version.outputs.tag }}"
-          prerelease: "${{ steps.extract_version.outputs.beta }}"
-          draft: "true"
-          generateReleaseNotes: true
+      # Tag/draft-release steps disabled in the ObtainRoc fork: upstream's
+      # GH_ACCESS_TOKEN secret is not set here. APKs ship as workflow artifacts.
