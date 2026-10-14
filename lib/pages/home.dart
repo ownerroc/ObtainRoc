@@ -108,8 +108,8 @@ class _HomePageState extends State<HomePage> {
           children: [
             Text(tr('documentationLinksNote')),
             const LinkText(
-              text: 'https://github.com/ownerroc/Obtainium/blob/main/README.md',
-              url: 'https://github.com/ownerroc/Obtainium/blob/main/README.md',
+              text: 'https://github.com/ownerroc/ObtainRoc/blob/main/README.md',
+              url: 'https://github.com/ownerroc/ObtainRoc/blob/main/README.md',
               style: TextStyle(fontWeight: FontWeight.bold),
             ),
           ],

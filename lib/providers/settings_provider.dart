@@ -20,7 +20,7 @@ import 'package:shared_storage/shared_storage.dart' as saf;
 
 const String obtainiumTempId = 'ivansslo_obtainroc_github.com';
 const String obtainiumId = 'dev.ivansslo.obtainroc';
-const String obtainiumUrl = 'https://github.com/ownerroc/Obtainium';
+const String obtainiumUrl = 'https://github.com/ownerroc/ObtainRoc';
 const Color obtainiumThemeColor = Color(0xFF6438B5);
 
 Locale? tryParseLocale(String? localeString) {
