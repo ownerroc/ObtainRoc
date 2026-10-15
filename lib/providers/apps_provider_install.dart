@@ -282,7 +282,7 @@ extension AppsProviderInstall on AppsProvider {
       PackageInfo? newInfo;
       final originalAssetName = app.apkUrls[app.preferredApkIndex].key
           .toLowerCase();
-      final isAPK = downloadedFile.path.toLowerCase().endsWith('.apk');
+      var isAPK = downloadedFile.path.toLowerCase().endsWith('.apk');
       final isXAPK = downloadedFile.path.toLowerCase().endsWith('.xapk');
       final isTarball =
           originalAssetName.endsWith('.tar.gz') ||
@@ -294,7 +294,11 @@ extension AppsProviderInstall on AppsProvider {
         newInfo = await packageManager.getPackageArchiveInfo(
           archiveFilePath: downloadedFile.path,
         );
-      } else {
+        if (newInfo == null) {
+          isAPK = false;
+        }
+      }
+      if (!isAPK || multipleApks) {
         final String apkDirPath = '${downloadedFile.path}-dir';
         if (isTarball) {
           await extractTarballFile(downloadedFile.path, apkDirPath);
