@@ -379,6 +379,7 @@
     "runBgCheckNow": "Nu een achtergrond-updatecontrole uitvoeren",
     "rustoreAggregatedAppNoApk": "RuStore lists this app from an external source and does not host its APK",
     "samsungGalaxyStoreApiError": "Samsung Galaxy Store API-fout",
+    "samsungGalaxyStoreLoginRequired": "This Galaxy Store app requires a Samsung account and cannot be downloaded anonymously.",
     "search": "Zoeken",
     "searchFailed": "{}: search failed ({})",
     "searchQuery": "Zoekopdracht",

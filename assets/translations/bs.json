@@ -379,6 +379,7 @@
     "runBgCheckNow": "Pokrenite pozadinsku provjeru ažuriranja sad",
     "rustoreAggregatedAppNoApk": "RuStore lists this app from an external source and does not host its APK",
     "samsungGalaxyStoreApiError": "Samsung Galaxy Store API greška",
+    "samsungGalaxyStoreLoginRequired": "This Galaxy Store app requires a Samsung account and cannot be downloaded anonymously.",
     "search": "Pretraživanje",
     "searchFailed": "{}: search failed ({})",
     "searchQuery": "Pretraga za: ",
