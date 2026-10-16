@@ -357,6 +357,8 @@
     "releaseDate": "Data wydania",
     "releaseDateAsVersion": "Używaj daty wydania jako wersji",
     "releaseDateAsVersionExplanation": "Używaj tylko dla aplikacji, w których wykrywanie wersji nie działa poprawnie, ale dostępna jest data wydania.",
+    "releaseDateDateFormat": "Date format for release date (intl pattern, e.g. 'EEE. MMMM do, yyyy - h:mma')",
+    "releaseDateRegEx": "Release date extraction RegEx",
     "releaseTitleAsVersion": "Używaj tytułu wydania jako wersji",
     "releaseTooYoungForMinAge": "Najnowsze wydanie jest młodsze niż minimalny wiek aktualizacji ({} dni), a to źródło nie udostępnia starszych wydań.",
     "remove": "Usuń",
