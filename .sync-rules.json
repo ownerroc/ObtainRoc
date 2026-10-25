@@ -1,0 +1,307 @@
+{
+ "rules": {
+  ".github/ISSUE_TEMPLATE/bug_report.yml": [
+   [
+    "dev.imranr.obtainium",
+    "dev.ivansslo.obtainroc"
+   ]
+  ],
+  "android/app/build.gradle.kts": [
+   [
+    "dev.imranr.obtainium",
+    "dev.ivansslo.obtainroc"
+   ]
+  ],
+  "android/app/src/debug/AndroidManifest.xml": [
+   [
+    "dev.imranr.obtainium",
+    "dev.ivansslo.obtainroc"
+   ]
+  ],
+  "android/app/src/main/AndroidManifest.xml": [
+   [
+    "dev.imranr.obtainium",
+    "dev.ivansslo.obtainroc"
+   ]
+  ],
+  "android/app/src/main/res/values/string.xml": [
+   [
+    "Obtainium",
+    "ObtainRoc"
+   ]
+  ],
+  "android/app/src/main/res/xml/file_paths.xml": [
+   [
+    "dev.imranr.obtainium",
+    "dev.ivansslo.obtainroc"
+   ]
+  ],
+  "android/app/src/profile/AndroidManifest.xml": [
+   [
+    "dev.imranr.obtainium",
+    "dev.ivansslo.obtainroc"
+   ]
+  ],
+  "assets/translations/ar.json": [
+   [
+    "Obtainium",
+    "ObtainRoc"
+   ]
+  ],
+  "assets/translations/bs.json": [
+   [
+    "Obtainium",
+    "ObtainRoc"
+   ]
+  ],
+  "assets/translations/ca.json": [
+   [
+    "Obtainium",
+    "ObtainRoc"
+   ]
+  ],
+  "assets/translations/cs.json": [
+   [
+    "Obtainium",
+    "ObtainRoc"
+   ]
+  ],
+  "assets/translations/da.json": [
+   [
+    "Obtainium",
+    "ObtainRoc"
+   ]
+  ],
+  "assets/translations/de.json": [
+   [
+    "Obtainium",
+    "ObtainRoc"
+   ]
+  ],
+  "assets/translations/en-EO.json": [
+   [
+    "Obtainium",
+    "ObtainRoc"
+   ]
+  ],
+  "assets/translations/en.json": [
+   [
+    "Obtainium",
+    "ObtainRoc"
+   ]
+  ],
+  "assets/translations/es.json": [
+   [
+    "Obtainium",
+    "ObtainRoc"
+   ]
+  ],
+  "assets/translations/fa.json": [
+   [
+    "Obtainium",
+    "ObtainRoc"
+   ]
+  ],
+  "assets/translations/fr.json": [
+   [
+    "Obtainium",
+    "ObtainRoc"
+   ]
+  ],
+  "assets/translations/gl.json": [
+   [
+    "Obtainium",
+    "ObtainRoc"
+   ]
+  ],
+  "assets/translations/hu.json": [
+   [
+    "Obtainium",
+    "ObtainRoc"
+   ]
+  ],
+  "assets/translations/id.json": [
+   [
+    "Obtainium",
+    "ObtainRoc"
+   ]
+  ],
+  "assets/translations/it.json": [
+   [
+    "Obtainium",
+    "ObtainRoc"
+   ]
+  ],
+  "assets/translations/ja.json": [
+   [
+    "Obtainium",
+    "ObtainRoc"
+   ]
+  ],
+  "assets/translations/ko.json": [
+   [
+    "Obtainium",
+    "ObtainRoc"
+   ]
+  ],
+  "assets/translations/ml.json": [
+   [
+    "Obtainium",
+    "ObtainRoc"
+   ]
+  ],
+  "assets/translations/nl.json": [
+   [
+    "Obtainium",
+    "ObtainRoc"
+   ]
+  ],
+  "assets/translations/pl.json": [
+   [
+    "Obtainium",
+    "ObtainRoc"
+   ]
+  ],
+  "assets/translations/pt-BR.json": [
+   [
+    "Obtainium",
+    "ObtainRoc"
+   ]
+  ],
+  "assets/translations/pt.json": [
+   [
+    "Obtainium",
+    "ObtainRoc"
+   ]
+  ],
+  "assets/translations/ru.json": [
+   [
+    "Obtainium",
+    "ObtainRoc"
+   ]
+  ],
+  "assets/translations/sv.json": [
+   [
+    "Obtainium",
+    "ObtainRoc"
+   ]
+  ],
+  "assets/translations/tr.json": [
+   [
+    "Obtainium",
+    "ObtainRoc"
+   ]
+  ],
+  "assets/translations/uk.json": [
+   [
+    "Obtainium",
+    "ObtainRoc"
+   ]
+  ],
+  "assets/translations/vi.json": [
+   [
+    "Obtainium",
+    "ObtainRoc"
+   ]
+  ],
+  "assets/translations/zh-Hant-TW.json": [
+   [
+    "Obtainium",
+    "ObtainRoc"
+   ]
+  ],
+  "assets/translations/zh.json": [
+   [
+    "Obtainium",
+    "ObtainRoc"
+   ]
+  ],
+  "fastlane/metadata/android/en-US/full_description.txt": [
+   [
+    "Obtainium",
+    "ObtainRoc"
+   ]
+  ],
+  "fastlane/metadata/android/en-US/title.txt": [
+   [
+    "Obtainium",
+    "ObtainRoc"
+   ]
+  ],
+  "integration_test/install_as_downloaded_test.dart": [
+   [
+    "dev.imranr.obtainium",
+    "dev.ivansslo.obtainroc"
+   ]
+  ],
+  "integration_test/install_update_test.dart": [
+   [
+    "dev.imranr.obtainium",
+    "dev.ivansslo.obtainroc"
+   ]
+  ],
+  "lib/main.dart": [
+   [
+    "author: 'ImranR98'",
+    "author: 'ownerroc'"
+   ],
+   [
+    "name: 'Obtainium'",
+    "name: 'ObtainRoc'"
+   ]
+  ],
+  "lib/pages/apps.dart": [
+   [
+    "Obtainium",
+    "ObtainRoc"
+   ]
+  ],
+  "lib/pages/home.dart": [
+   [
+    "https://github.com/ImranR98/Obtainium",
+    "https://github.com/ownerroc/ObtainRoc"
+   ],
+   [
+    "ImranR98/Obtainium",
+    "ownerroc/ObtainRoc"
+   ]
+  ],
+  "lib/providers/external_install_bridge.dart": [
+   [
+    "dev.imranr.obtainium",
+    "dev.ivansslo.obtainroc"
+   ]
+  ],
+  "lib/providers/settings_provider.dart": [
+   [
+    "dev.imranr.obtainium",
+    "dev.ivansslo.obtainroc"
+   ],
+   [
+    "imranr98_obtainium_github.com",
+    "ivansslo_obtainroc_github.com"
+   ],
+   [
+    "https://github.com/ImranR98/Obtainium",
+    "https://github.com/ownerroc/ObtainRoc"
+   ],
+   [
+    "ImranR98/Obtainium",
+    "ownerroc/ObtainRoc"
+   ]
+  ],
+  "tool/e2e.sh": [
+   [
+    "dev.imranr.obtainium",
+    "dev.ivansslo.obtainroc"
+   ]
+  ]
+ },
+ "manual": [
+  ".github/workflows/release.yml",
+  "README.md"
+ ],
+ "missing": [
+  "android/app/src/main/kotlin/dev/ivansslo/obtainroc/MainActivity.kt"
+ ]
+}
