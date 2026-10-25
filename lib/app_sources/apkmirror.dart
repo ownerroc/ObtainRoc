@@ -85,7 +85,7 @@ class APKMirror extends AppSource {
   }) async {
     final headers = {
       'User-Agent':
-          'Obtainium/${(await getInstalledInfo(obtainiumId))?.versionName ?? _fallbackVersion} (+https://github.com/ImranR98/Obtainium)',
+          'Obtainium/${(await getInstalledInfo(obtainiumId))?.versionName ?? _fallbackVersion} (+https://github.com/ownerroc/ObtainRoc)',
     };
     final uri = Uri.tryParse(url);
     if (uri != null &&

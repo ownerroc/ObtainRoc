@@ -20,7 +20,7 @@ class DownloadsExport {
 /// document tree with read and write persistable access (needed because
 /// shared_storage's `openDocumentTree` can only request one of the two flags,
 /// so persisted export directories lose read access once the temporary grant
-/// expires, #3227), and writing/reading exports in `Downloads/Obtainium/` on
+/// expires, #3227), and writing/reading exports in `Downloads/ObtainRoc/` on
 /// devices - typically TVs - that have no document picker at all.
 class DocumentTreeBridge {
   DocumentTreeBridge._();
@@ -28,7 +28,7 @@ class DocumentTreeBridge {
   static final DocumentTreeBridge instance = DocumentTreeBridge._();
 
   static const MethodChannel _channel = MethodChannel(
-    'dev.imranr.obtainium/document_tree',
+    'dev.ivansslo.obtainroc/document_tree',
   );
 
   /// Returns the picked tree URI, or null when the user cancelled.
@@ -37,7 +37,7 @@ class DocumentTreeBridge {
     return result == null ? null : Uri.parse(result);
   }
 
-  /// Writes [bytes] to `Downloads/Obtainium/[name]` through MediaStore.
+  /// Writes [bytes] to `Downloads/ObtainRoc/[name]` through MediaStore.
   /// Returns the display path, or null below Android 10.
   Future<String?> exportToDownloads({
     required String name,
@@ -51,7 +51,7 @@ class DocumentTreeBridge {
     });
   }
 
-  /// Lists exports previously written to `Downloads/Obtainium/`, newest first.
+  /// Lists exports previously written to `Downloads/ObtainRoc/`, newest first.
   Future<List<DownloadsExport>> downloadsExports() async {
     final raw = await _channel.invokeMethod<List<dynamic>>(
       'listDownloadsExports',

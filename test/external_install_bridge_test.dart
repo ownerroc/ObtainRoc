@@ -3,7 +3,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:obtainium/providers/external_install_bridge.dart';
 
 void main() {
-  const channel = MethodChannel('dev.imranr.obtainium/external_install');
+  const channel = MethodChannel('dev.ivansslo.obtainroc/external_install');
 
   group('externalInstallResultFromNative', () {
     test('maps a successful native result', () {
@@ -49,7 +49,7 @@ void main() {
       });
 
       final result = await ExternalInstallerBridge.instance.launchInstallIntent(
-        uri: 'content://dev.imranr.obtainium.probe/sample.apk',
+        uri: 'content://dev.ivansslo.obtainroc.probe/sample.apk',
         type: 'application/vnd.android.package-archive',
         expectedPackageName: 'com.example.app',
       );
@@ -66,7 +66,7 @@ void main() {
 
       expect(
         ExternalInstallerBridge.instance.launchInstallIntent(
-          uri: 'content://dev.imranr.obtainium.probe/sample.apk',
+          uri: 'content://dev.ivansslo.obtainroc.probe/sample.apk',
           type: 'application/vnd.android.package-archive',
           expectedPackageName: 'com.example.app',
         ),

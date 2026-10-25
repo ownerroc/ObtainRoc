@@ -520,7 +520,7 @@ extension AppsProviderLifecycle on AppsProvider {
                   [
                     GeneratedFormSwitch(
                       'rmAppEntry',
-                      label: tr('removeFromObtainium'),
+                      label: tr('removeFromObtainRoc'),
                       value: true,
                     ),
                   ],

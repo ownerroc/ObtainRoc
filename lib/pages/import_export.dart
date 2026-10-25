@@ -387,7 +387,7 @@ class _ImportSectionState extends State<ImportSection> {
     );
   }
 
-  /// Imports an export previously written to `Downloads/Obtainium/` (the
+  /// Imports an export previously written to `Downloads/ObtainRoc/` (the
   /// picker-less export destination for TVs).
   Future<void> _runDownloadsImport(BuildContext context) async {
     final settingsProvider = context.read<SettingsProvider>();
