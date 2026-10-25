@@ -217,7 +217,7 @@ void main() {
     await pressUntil(
       tester,
       LogicalKeyboardKey.arrowDown,
-      () => focusIsOnText('Obtainium export'),
+      () => focusIsOnText('ObtainRoc export'),
       reason: 'export row reachable',
     );
     await pressKey(tester, LogicalKeyboardKey.select);

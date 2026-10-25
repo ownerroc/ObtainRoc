@@ -138,7 +138,7 @@ void main() {
     await pumpUntil(tester, find.text('Import/export'));
     await tester.tap(find.text('Import/export'));
     await pumpUntil(tester, find.text('Pick export directory'));
-    expect(find.text('Obtainium import'), findsOneWidget);
+    expect(find.text('ObtainRoc import'), findsOneWidget);
     await pressBack(tester);
 
     // Settings -> App logs.
